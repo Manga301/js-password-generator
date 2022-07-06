@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  background-color: #1f2937;
+  color: #fff;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header-content {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.title-green {
+  color: #4adf86;
+}
+
+#title {
+  margin: 40px 0px 8px 0px;
+}
+
+#sub-title {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 50px;
+}
+
+#password-btn {
+  background-color: #10b981;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  color: inherit;
+  margin-bottom: 40px;
+  width: 200px;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #2f3e53;
+  margin-bottom: 40px;
+}
+
+#password-display {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.pass-opt {
+  background-color: #273549;
+  width: 240px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  text-align: center;
+  line-height: 40px;
+  color: #55f991;
+  border: none;
+  cursor: copy;
+}
+
+.pass-opt::selection {
+  background-color: transparent;
+}
+
+/* snackbar */
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #181818a6;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  opacity: 0;
+  -webkit-transition: 4s all ease-in-out;
+  -moz-transition: 4s all ease-in-out;
+  -o-transition: 4s all ease-in-out;
+  transition: 4s all ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  #password-display {
+    flex-direction: column;
+  }
+}
